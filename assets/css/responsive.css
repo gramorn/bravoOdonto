@@ -36,7 +36,12 @@
 
 /* === Tablet (≤1024px) === */
 @media (max-width: 1024px) {
-    .hero-label { display: none; }
+    .hero-label { display: flex; }
+    .hero-label--1 { top: 5%; left: -10px; }
+    .hero-label--2 { top: 2%; right: -10px; }
+    .hero-label--3 { top: 40%; right: -12px; }
+    .hero-label--4 { bottom: 30%; left: -10px; }
+    .hero-label--5 { bottom: 4%; right: -10px; }
     .hero-container { grid-template-columns: 1fr; gap: 40px; text-align: center; padding-top: 60px; }
     .hero-content { order: 1; display: flex; flex-direction: column; align-items: center; }
     .hero-subtitle { max-width: 100%; }
@@ -69,7 +74,11 @@
     .ring-1{width:340px;height:340px} .ring-2{width:390px;height:390px} .ring-3{width:440px;height:440px}
     .scroll-indicator { display: none; }
     .about-stats { flex-direction: column; gap: 20px; }
-    .about-image, .about-video, .professional-image { height: 350px; }
+    .about-image, .professional-image { height: 350px; }
+    .about-video-wrapper { max-width: 280px; }
+    .hero-label-badge { padding: 4px 10px; }
+    .hero-label-badge span { font-size: 0.6rem; }
+    .hero-label-badge svg { width: 9px; height: 9px; }
     .treatments-carousel-wrapper { max-width: 100%; gap: 8px; }
     .treat-arrow { width: 36px; height: 36px; }
     .cta-final { padding: 80px 0; }
@@ -126,7 +135,8 @@
     .hero-image-container { max-width: 250px; }
     .hero-image-glow { width: 280px; height: 280px; }
     .ring-1{width:280px;height:280px} .ring-2{width:320px;height:320px} .ring-3{width:360px;height:360px}
-    .about-image, .about-video, .professional-image { height: 280px; }
+    .about-image, .professional-image { height: 280px; }
+    .about-video-wrapper { max-width: 220px; }
     .whatsapp-cta { padding: 50px 0; }
     .btn-whatsapp { width: 100%; padding: 16px 24px; }
 }
@@ -147,7 +157,8 @@
     .section-title { font-size: clamp(1.4rem, 6vw, 1.8rem) !important; margin-bottom: 12px; }
     .section-description { font-size: 0.85rem; }
     .section-header { margin-bottom: 28px; }
-    .about-image, .about-video, .professional-image { height: 200px; }
+    .about-image, .professional-image { height: 200px; }
+    .about-video-wrapper { max-width: 180px; }
     .about-image-decoration { display: none; }
     .about-text { font-size: 0.88rem; }
     .about-stats { margin: 20px 0; }
@@ -199,7 +210,8 @@
     .hero-image-container { max-width: 230px; }
     .hero-image-glow { width: 260px; height: 260px; }
     .ring-1{width:260px;height:260px} .ring-2{width:300px;height:300px} .ring-3{width:340px;height:340px}
-    .about-image, .about-video, .professional-image { height: 240px; }
+    .about-image, .professional-image { height: 240px; }
+    .about-video-wrapper { max-width: 240px; }
     .treatment-card { min-width: 240px; max-width: 240px; }
     .section-title { font-size: clamp(1.5rem, 6vw, 1.9rem) !important; }
 }
