@@ -1,0 +1,205 @@
+/* ============================================================
+   RESPONSIVE — Media Queries e Animações Globais
+   ============================================================ */
+
+/* === Keyframes Globais === */
+@keyframes btnPulse {
+    0%, 100% { box-shadow: 0 4px 25px rgba(37,211,102,0.3); transform: scale(1); }
+    50% { box-shadow: 0 4px 35px rgba(37,211,102,0.55); transform: scale(1.03); }
+}
+@keyframes pulseGlow { 0%,100%{transform:scale(1);opacity:.6} 50%{transform:scale(1.15);opacity:1} }
+@keyframes particleFloat { 0%{opacity:0;transform:translateY(100vh) scale(0)} 20%{opacity:.6} 80%{opacity:.6} 100%{opacity:0;transform:translateY(-10vh) scale(1)} }
+@keyframes ringRotate { 0%{transform:translate(-50%,-50%) rotate(0deg)} 100%{transform:translate(-50%,-50%) rotate(360deg)} }
+@keyframes scrollPulse { 0%,100%{opacity:.3;transform:scaleY(.5)} 50%{opacity:1;transform:scaleY(1)} }
+@keyframes labelFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+@keyframes progressPause { 0%{transform:scaleX(1)} 100%{transform:scaleX(0)} }
+@keyframes shineSweep { 0%{opacity:0;transform:translate(-30%,-30%) rotate(0deg)} 50%{opacity:1;transform:translate(0,0) rotate(0deg)} 100%{opacity:0;transform:translate(30%,30%) rotate(0deg)} }
+@keyframes locationFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+@keyframes whatsappPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+@keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+/* === Scroll Animations === */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in-left.visible { opacity: 1; transform: translateX(0); }
+.fade-in-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in-right.visible { opacity: 1; transform: translateX(0); }
+.fade-in-up { opacity: 0; transform: translateY(40px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in-up.visible { opacity: 1; transform: translateY(0); }
+.fade-in-up[data-delay="0"]{transition-delay:0ms} .fade-in-up[data-delay="100"]{transition-delay:100ms}
+.fade-in-up[data-delay="150"]{transition-delay:150ms} .fade-in-up[data-delay="200"]{transition-delay:200ms}
+.fade-in-up[data-delay="300"]{transition-delay:300ms} .fade-in-up[data-delay="400"]{transition-delay:400ms}
+.fade-in-up[data-delay="500"]{transition-delay:500ms} .fade-in-up[data-delay="600"]{transition-delay:600ms}
+.fade-in-up[data-delay="700"]{transition-delay:700ms} .fade-in-up[data-delay="800"]{transition-delay:800ms}
+.fade-in-up[data-delay="900"]{transition-delay:900ms}
+
+/* === Tablet (≤1024px) === */
+@media (max-width: 1024px) {
+    .hero-label { display: none; }
+    .hero-container { grid-template-columns: 1fr; gap: 40px; text-align: center; padding-top: 60px; }
+    .hero-content { order: 1; display: flex; flex-direction: column; align-items: center; }
+    .hero-subtitle { max-width: 100%; }
+    .hero-image-wrapper { order: 0; }
+    .hero-image-container { max-width: 380px; }
+    .ring-1{width:420px;height:420px} .ring-2{width:480px;height:480px} .ring-3{width:540px;height:540px}
+    .about-grid, .professional-grid { grid-template-columns: 1fr; gap: 50px; }
+    .about-content { padding-right: 0; text-align: center; }
+    .about-stats { justify-content: center; }
+    .location-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+
+    .testi-slide { min-width: 300px; max-width: 300px; }
+    .testi-carousel-wrapper { max-width: 100%; gap: 8px; }
+    .testi-arrow { width: 36px; height: 36px; }
+
+    .professional-content-full .professional-info { flex-direction: column; align-items: center; }
+    .professional-content-full .info-item { max-width: 100%; width: 100%; padding: 24px 20px; }
+
+    .carousel-character--left { display: none; }
+}
+
+/* === Mobile (≤768px) === */
+@media (max-width: 768px) {
+    :root { --section-padding: 60px 0; }
+    .hero-container { min-height: auto; padding-top: 50px; padding-bottom: 60px; }
+    .hero-title { font-size: clamp(2rem, 8vw, 2.8rem); }
+    .hero-image-container { max-width: 300px; }
+    .hero-image-glow { width: 350px; height: 350px; }
+    .ring-1{width:340px;height:340px} .ring-2{width:390px;height:390px} .ring-3{width:440px;height:440px}
+    .scroll-indicator { display: none; }
+    .about-stats { flex-direction: column; gap: 20px; }
+    .about-image, .about-video, .professional-image { height: 350px; }
+    .treatments-carousel-wrapper { max-width: 100%; gap: 8px; }
+    .treat-arrow { width: 36px; height: 36px; }
+    .cta-final { padding: 80px 0; }
+    .location-map { height: 300px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .footer-logo { justify-content: center; }
+    .footer-contact-list li { justify-content: center; }
+    .footer-social { justify-content: center; }
+    .footer-brand-logo { margin: 12px auto 0; display: block; }
+    .btn-large { padding: 16px 36px; font-size: 0.95rem; }
+    .section-header { margin-bottom: 40px; }
+
+    .carousel-image-wrapper { height: 300px; }
+    .carousel-btn { width: 36px; height: 36px; opacity: 1; }
+    .carousel-btn--prev { left: 8px; } .carousel-btn--next { right: 8px; }
+    .carousel-topbar { top: 8px; right: 10px; }
+    .carousel-counter { font-size: 0.65rem; padding: 3px 10px; }
+    .carousel-container .result-label { font-size: 0.6rem; padding: 4px 10px; top: 10px; }
+    .carousel-container .result-label--before { left: 10px; top: 10px; }
+    .carousel-container .result-label--after { left: 10px; bottom: 10px; top: auto; right: auto; }
+
+    .location-character { height: 180px; bottom: -20px; right: -15px; }
+    .carousel-character--right { height: 180px; bottom: -30px; right: -20px; }
+    .carousel-character--left { display: none; }
+}
+
+/* === Mobile tratamento cards (≤640px) === */
+@media (max-width: 640px) {
+    .treatments-carousel-wrapper { max-width: 100%; gap: 8px; }
+    .treatment-card { min-width: calc(100vw - 100px); max-width: calc(100vw - 100px); margin: 0 8px; }
+    .treatments-track { gap: 0; padding: 10px 8px; }
+
+    .section-title--has-icon { flex-direction: column; gap: 8px; }
+    .section-title-icon { height: 36px; }
+}
+
+/* === Small testi (≤768px) === */
+@media (max-width: 768px) {
+    .testi-slide { min-width: 300px; max-width: 300px; }
+    .testi-carousel-wrapper { max-width: 100%; gap: 8px; }
+    .testi-arrow { width: 36px; height: 36px; }
+}
+@media (max-width: 400px) {
+    .testi-slide { min-width: 260px; max-width: 260px; }
+}
+
+/* === Small phone (≤480px) === */
+@media (max-width: 480px) {
+    .carousel-image-wrapper { height: 220px; }
+    .carousel-footer { padding: 10px 14px; }
+    .carousel-dot { width: 8px; height: 8px; }
+    .carousel-dot.active { width: 22px; }
+
+    .hero-image-container { max-width: 250px; }
+    .hero-image-glow { width: 280px; height: 280px; }
+    .ring-1{width:280px;height:280px} .ring-2{width:320px;height:320px} .ring-3{width:360px;height:360px}
+    .about-image, .about-video, .professional-image { height: 280px; }
+    .whatsapp-cta { padding: 50px 0; }
+    .btn-whatsapp { width: 100%; padding: 16px 24px; }
+}
+
+/* === Very small phone (≤400px) === */
+@media (max-width: 400px) {
+    :root { --section-padding: 40px 0; --container-padding: 0 16px; }
+    .hero-container { padding-top: 30px; padding-bottom: 40px; gap: 24px; }
+    .hero-title { font-size: clamp(1.4rem, 7vw, 1.8rem) !important; margin-bottom: 12px; }
+    .hero-subtitle { font-size: 0.85rem !important; margin-bottom: 24px; }
+    .hero-badge { margin-bottom: 12px; }
+    .hero-logo { height: 48px !important; }
+    .hero-image-container { max-width: 200px; }
+    .hero-image-glow { width: 220px; height: 220px; }
+    .ring-1{width:220px;height:220px} .ring-2{width:260px;height:260px} .ring-3{width:300px;height:300px}
+    .btn { padding: 14px 24px; font-size: 0.85rem; }
+    .btn-large { padding: 14px 28px; font-size: 0.9rem; }
+    .section-title { font-size: clamp(1.4rem, 6vw, 1.8rem) !important; margin-bottom: 12px; }
+    .section-description { font-size: 0.85rem; }
+    .section-header { margin-bottom: 28px; }
+    .about-image, .about-video, .professional-image { height: 200px; }
+    .about-image-decoration { display: none; }
+    .about-text { font-size: 0.88rem; }
+    .about-stats { margin: 20px 0; }
+    .stat-number { font-size: 1.5rem; }
+    .treatment-card { min-width: 220px; max-width: 220px; padding: 24px 16px; }
+    .card-title { font-size: 1rem; }
+    .card-text { font-size: 0.8rem; }
+    .card-icon { width: 50px; height: 50px; }
+    .card-icon svg { width: 30px; height: 30px; }
+    .carousel-image-wrapper { height: 180px; }
+    .carousel-btn { width: 30px; height: 30px; }
+    .carousel-btn svg { width: 16px; height: 16px; }
+    .testimonial-elegant-content { padding: 24px 18px 20px; }
+    .testimonial-elegant-text { font-size: 0.82rem; }
+    .testimonial-elegant .testimonial-avatar { width: 38px; height: 38px; }
+    .cta-final { padding: 60px 0; }
+    .cta-title { font-size: clamp(1.4rem, 7vw, 1.8rem) !important; }
+    .cta-text { font-size: 0.9rem; }
+    .location-card--brand { padding: 14px; gap: 12px; }
+    .location-card--brand .location-icon { width: 38px; height: 38px; }
+    .location-card--brand .location-icon svg { width: 18px; height: 18px; }
+    .location-card--brand .location-detail strong { font-size: 0.8rem; }
+    .location-card--brand .location-detail span { font-size: 0.78rem; }
+    .location-map { height: 220px; }
+    .location-character { height: 130px; bottom: -15px; right: -10px; }
+    .carousel-character--right { height: 130px; bottom: -25px; right: -15px; }
+    .carousel-character--left { display: none; }
+    .footer { padding: 40px 0 20px; }
+    .footer-grid { gap: 24px; }
+    .footer-logo-name { font-size: 0.95rem; }
+    .footer-description { font-size: 0.8rem; }
+    .footer-contact-list li { font-size: 0.8rem; }
+    .social-link { width: 34px; height: 34px; }
+    .whatsapp-cta { padding: 40px 0; }
+    .whatsapp-title { font-size: 1.2rem; }
+    .whatsapp-text { font-size: 0.85rem; }
+    .btn-whatsapp { padding: 14px 20px; font-size: 0.85rem; }
+    .treat-arrow { width: 32px; height: 32px; }
+    .treat-arrow svg { width: 16px; height: 16px; }
+    .results-testimonials { margin-top: 40px; }
+    .footer-bottom p { font-size: 0.7rem; }
+    .testi-slide { min-width: 260px; max-width: 260px; }
+}
+
+/* === Medium phones (401-520px) === */
+@media (min-width: 401px) and (max-width: 520px) {
+    .hero-title { font-size: clamp(1.6rem, 7vw, 2rem) !important; }
+    .hero-logo { height: 56px !important; }
+    .hero-image-container { max-width: 230px; }
+    .hero-image-glow { width: 260px; height: 260px; }
+    .ring-1{width:260px;height:260px} .ring-2{width:300px;height:300px} .ring-3{width:340px;height:340px}
+    .about-image, .about-video, .professional-image { height: 240px; }
+    .treatment-card { min-width: 240px; max-width: 240px; }
+    .section-title { font-size: clamp(1.5rem, 6vw, 1.9rem) !important; }
+}

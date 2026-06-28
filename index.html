@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bravo Odontologia Integrada e Estética em Praia Grande. Clínica odontológica completa com foco em saúde, estética e bem-estar. Mais do que dentes, cuidamos de pessoas.">
+    <title>Bravo Odontologia Integrada e Estética | Praia Grande</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 1 — HERO PRINCIPAL                     -->
+    <!-- ============================================ -->
+    <section class="hero" id="hero">
+        <!-- Background effects -->
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="grid-lines"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">
+                    <img src="assets/images/logos/logodourado.png"
+                         alt="Bravo Odontologia Integrada e Estética"
+                         class="hero-logo">
+                </span>
+                <h1 class="hero-title">Mais do que dentes,<br>cuidamos de pessoas.</h1>
+                <p class="hero-subtitle">Tratamentos odontológicos personalizados para transformar seu sorriso com segurança e excelência.</p>
+                <a href="#" onclick="openWhatsApp()" class="btn btn-primary hero-btn">
+                    Agendar uma avaliação
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="hero-image-wrapper fade-in">
+                <div class="hero-image-glow"></div>
+                <div class="hero-image-container">
+                    <img src="assets/images/characters/2.png"
+                         alt="Dr. Bravo"
+                         class="hero-image"
+                         loading="eager">
+                    <!-- Floating treatment tags -->
+                    <div class="hero-label hero-label--1">
+                        <div class="hero-label-badge">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f2bf52"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.5 2.5 6.5 5 8.5L12 22l3-3.5c2.5-2 5-5 5-8.5 0-4.42-3.58-8-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Implantes</span>
+                        </div>
+                    </div>
+                    <div class="hero-label hero-label--2">
+                        <div class="hero-label-badge">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f2bf52"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.5 2.5 6.5 5 8.5L12 22l3-3.5c2.5-2 5-5 5-8.5 0-4.42-3.58-8-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Clareamentos</span>
+                        </div>
+                    </div>
+                    <div class="hero-label hero-label--3">
+                        <div class="hero-label-badge">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f2bf52"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.5 2.5 6.5 5 8.5L12 22l3-3.5c2.5-2 5-5 5-8.5 0-4.42-3.58-8-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Botox</span>
+                        </div>
+                    </div>
+                    <div class="hero-label hero-label--4">
+                        <div class="hero-label-badge">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f2bf52"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.5 2.5 6.5 5 8.5L12 22l3-3.5c2.5-2 5-5 5-8.5 0-4.42-3.58-8-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Facetas</span>
+                        </div>
+                    </div>
+                    <div class="hero-label hero-label--5">
+                        <div class="hero-label-badge">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f2bf52"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.5 2.5 6.5 5 8.5L12 22l3-3.5c2.5-2 5-5 5-8.5 0-4.42-3.58-8-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Harmonização</span>
+                        </div>
+                    </div>
+
+                    <!-- Sombra nos pés -->
+                    <div class="hero-shadow"></div>
+                </div>
+                <!-- Decorative rings -->
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">Role para conhecer</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 2 — SOBRE A CLÍNICA                    -->
+    <!-- ============================================ -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper fade-in-left">
+                    <div class="about-video-wrapper">
+                        <video class="about-video" autoplay muted loop playsinline loading="lazy">
+                            <source src="assets/videos/AQM5gFvL60uniMMg8CFvYgxRTUQX-ZwlIuzH4nfQKmfBsHD0485CCq9tunWN6H4Jmi7N3rXnvAADu0Q-vnIIsY3aN6JG-ZH6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="about-image-decoration"></div>
+                </div>
+
+                <div class="about-content fade-in-right">
+                    <span class="section-tag">Quem somos</span>
+                    <h2 class="section-title">Sobre a clínica</h2>
+                    <p class="about-text">
+                        A Bravo Odontologia Integrada e Estética é a mais nova clínica odontológica de Praia Grande, completa com foco em saúde, estética e bem-estar. Atendimento personalizado para crianças, adultos e idosos, onde cada sorriso é tratado com dedicação e excelência.
+                    </p>
+
+                    <div class="about-botox-text">
+                        <p class="about-text about-text--highlight">
+                            <span class="text-grad">Aqui na Bravo</span> queremos trazer uma experiência <span class="text-grad">exclusiva</span> para quem deseja conhecer o poder da <span class="text-grad">estética facial</span> com segurança, excelência e <span class="text-grad">resultados naturais</span>.
+                        </p>
+                        <p class="about-text about-text--highlight">
+                            Em datas especiais, a <span class="text-grad">Bravo Odontologia e Estética</span> reúne seus pacientes em um <span class="text-grad">dia dedicado ao Botox</span>, com condições diferenciadas para você descobrir nosso atendimento especializado, nossa técnica e todo o cuidado que transforma cada procedimento em uma <span class="text-grad">experiência única</span>.
+                        </p>
+                        <p class="about-text about-text--highlight">
+                            <span class="text-grad">Mais que um tratamento</span>, um convite para conhecer o <span class="text-grad">padrão Bravo</span> de cuidar da sua beleza.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Pacientes atendidos</span>
+                        </div>
+                    </div>
+
+                    <a href="#" onclick="openWhatsApp()" class="btn btn-primary">
+                        Agendar uma avaliação
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 3 — TRATAMENTOS (CARROSSEL)            -->
+    <!-- ============================================ -->
+    <section class="treatments" id="tratamentos">
+        <div class="treatments-bg">
+            <div class="treatments-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag section-tag--light">Especialidades</span>
+                <h2 class="section-title section-title--light">Tratamentos</h2>
+                <p class="section-description section-description--light">
+                    Oferecemos um atendimento completo com as melhores técnicas da odontologia moderna.
+                </p>
+            </div>
+
+            <div class="treatments-carousel-wrapper fade-in">
+                <button class="treat-arrow treat-arrow--prev" id="treatPrev" aria-label="Anterior">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+
+                <div class="treatments-carousel" id="treatmentsCarousel">
+                    <div class="treatments-track" id="treatmentsTrack">
+                        <!-- Card 1 — Implantes -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2C8 2 4.5 5 4.5 9.5c0 3 1.5 5.5 3.5 7.5L12 21l4-4c2-2 3.5-4.5 3.5-7.5C19.5 5 16 2 12 2z"/>
+                                    <path d="M10 8l4 4"/>
+                                    <path d="M14 8l-4 4"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Implantes</h3>
+                            <p class="card-text">Reabilitação oral com implantes de titânio de alta qualidade e técnica cirúrgica precisa.</p>
+                        </div>
+
+                        <!-- Card 2 — Clareamentos -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M12 2v2"/><path d="M12 20v2"/>
+                                    <path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/>
+                                    <path d="M2 12h2"/><path d="M20 12h2"/>
+                                    <path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/>
+                                    <path d="M9 12c0 1.66 1.34 3 3 3s3-1.34 3-3"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Clareamentos</h3>
+                            <p class="card-text">Clareamento dental profissional para um sorriso mais branco e radiante em poucas sessões.</p>
+                        </div>
+
+                        <!-- Card 3 — Botox -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 12a5 5 0 0 1-5 5"/><path d="M7 12a5 5 0 0 1 5-5"/>
+                                    <path d="M12 7V2"/><path d="M12 22v-5"/><path d="M5 12H2"/><path d="M22 12h-3"/>
+                                    <path d="M17.66 17.66L19.07 19.07"/><path d="M4.93 4.93L6.34 6.34"/>
+                                    <path d="M17.66 6.34L19.07 4.93"/><path d="M4.93 19.07L6.34 17.66"/>
+                                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Botox</h3>
+                            <p class="card-text">Aplicação de toxina botulínica para harmonização facial e tratamento de disfunções.</p>
+                        </div>
+
+                        <!-- Card 4 — Próteses -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 4h-2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                                    <path d="M7 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                                    <path d="M12 2v20"/><path d="M8 8h2"/><path d="M14 8h2"/><path d="M8 12h2"/>
+                                    <path d="M14 12h2"/><path d="M8 16h2"/><path d="M14 16h2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Próteses</h3>
+                            <p class="card-text">Soluções protéticas fixas e removíveis com materiais estéticos de última geração.</p>
+                        </div>
+
+                        <!-- Card 5 — Endodontia -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 10l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Endodontia</h3>
+                            <p class="card-text">Tratamento de canal com técnica indolor e segura para salvar dentes comprometidos pela cárie profunda.</p>
+                        </div>
+
+                        <!-- Card 6 — Aparelhos -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 6c0 2 1.5 4 4 4s4-2 4-4"/><path d="M8 10v8"/>
+                                    <path d="M12 6c0 2 1.5 4 4 4s4-2 4-4"/><path d="M16 10v8"/>
+                                    <path d="M8 18h8"/><path d="M3 18h2"/><path d="M19 18h2"/><path d="M12 18v-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Aparelhos</h3>
+                            <p class="card-text">Ortodontia moderna com aparelhos fixos, móveis e alinhadores para um sorriso alinhado.</p>
+                        </div>
+
+                        <!-- Card 7 — Facetas -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2C7 2 3 6 3 11c0 4 2.5 7.5 5 9.5L12 22l4-1.5c2.5-2 5-5.5 5-9.5 0-5-4-9-9-9z"/>
+                                    <path d="M8 12c0 2 1.5 3 4 3s4-1 4-3"/><path d="M9 9h.01"/><path d="M15 9h.01"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Facetas</h3>
+                            <p class="card-text">Lâminas ultrafinas de porcelana para corrigir formato, cor e alinhamento dos dentes com naturalidade.</p>
+                        </div>
+
+                        <!-- Card 8 — Harmonização Orofacial -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="9" r="4"/>
+                                    <path d="M4 21v-1a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v1"/>
+                                    <path d="M18 8l3-3"/><path d="M21 5l-3 3"/>
+                                    <path d="M19 7l2 2"/><path d="M19 7l-2 2"/><path d="M12 13v2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Harmonização Orofacial</h3>
+                            <p class="card-text">Botox, preenchimento e procedimentos minimamente invasivos para realçar sua beleza natural.</p>
+                        </div>
+
+                        <!-- Card 9 — Periodontia -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M8 12h8"/><path d="M12 8v8"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Periodontia</h3>
+                            <p class="card-text">Prevenção e tratamento de doenças da gengiva para garantir a saúde bucal completa e duradoura.</p>
+                        </div>
+
+                        <!-- Card 10 — Odontopediatria -->
+                        <div class="treatment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/>
+                                    <path d="M16 6s1-2 3-2 2 2 0 3"/><path d="M8 6s-1-2-3-2-2 2 0 3"/>
+                                    <path d="M12 12v3"/><path d="M10 15h4"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Odontopediatria</h3>
+                            <p class="card-text">Cuidado odontológico especializado para crianças em um ambiente lúdico, acolhedor e livre de medo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="treat-arrow treat-arrow--next" id="treatNext" aria-label="Próximo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+
+            <!-- Dots -->
+            <div class="treat-dots" id="treatDots"></div>
+
+            <div class="results-cta">
+                <a href="#" onclick="openWhatsApp()" class="btn btn-primary" style="margin-top:20px">
+                    Avaliação COMPLETA gratuita
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 4 — SOBRE A CLÍNICA                   -->
+    <!-- ============================================ -->
+    <section class="professional" id="profissional">
+        <div class="professional-bg">
+            <img src="assets/images/backgrounds/fotoclinica.png" alt="" class="professional-bg-img">
+            <div class="professional-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="professional-content-full fade-in">
+                <h2 class="section-title section-title--gold">Sobre a clínica</h2>
+                <p class="professional-text">
+                    A Bravo Odontologia Integrada e Estética é referência em saúde e estética dental em Praia Grande, 
+                    comprometida em devolver não apenas a função mastigatória, mas também a autoestima 
+                    dos seus pacientes.
+                </p>
+
+                <div class="professional-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div class="info-text">
+                            <strong>Especialidades</strong>
+                            <span>Implantes, Clareamentos, Botox, Próteses</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="info-text">
+                            <strong>Tratamentos</strong>
+                            <span>Canal, Aparelhos, Facetas, Harmonização Facial</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="info-text">
+                            <strong>Diferenciais</strong>
+                            <span>Abordagem humanizada, tecnologia digital e atendimento personalizado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" onclick="openWhatsApp()" class="btn btn-primary">
+                    Agendar uma avaliação
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 5 — RESULTADOS / CARROSSEL ANTES E DEPOIS -->
+    <!-- ============================================ -->
+    <section class="results" id="resultados">
+        <div class="container">
+            <div class="section-header fade-in">
+                
+                <h2 class="section-title section-title--has-icon">
+                    Veja alguns resultados
+                </h2>
+                <p class="section-description">
+                    Conheça casos reais de pacientes que transformaram seus sorrisos conosco.
+                </p>
+            </div>
+
+            <!-- Carrossel Dinâmico -->
+            <div class="carousel-container fade-in">
+                <div class="carousel-viewport">
+                    <!-- Progress bar -->
+                    <div class="carousel-progress">
+                        <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+                    </div>
+
+                    <!-- Top bar: counter + pause -->
+                    <div class="carousel-topbar">
+                        <span class="carousel-counter" id="carouselCounter">1 / 6</span>
+                    <button class="carousel-pause-btn" id="carouselPauseBtn" aria-label="Pausar/Reproduzir">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="6" y="4" width="4" height="16" rx="1"/>
+                            <rect x="14" y="4" width="4" height="16" rx="1"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-image-wrapper">
+                            <span class="result-label result-label--before">Antes</span>
+                            <span class="result-label result-label--after">Depois</span>
+                            <img src="assets/images/before-after/Screenshot_15.png" alt="Caso 1" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-image-wrapper">
+                            <span class="result-label result-label--before">Antes</span>
+                            <span class="result-label result-label--after">Depois</span>
+                            <img src="assets/images/before-after/Screenshot_16.png" alt="Caso 2" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-image-wrapper">
+                            <span class="result-label result-label--before">Antes</span>
+                            <span class="result-label result-label--after">Depois</span>
+                            <img src="assets/images/before-after/Screenshot_17.png" alt="Caso 3" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-image-wrapper">
+                            <span class="result-label result-label--before">Antes</span>
+                            <span class="result-label result-label--after">Depois</span>
+                            <img src="assets/images/before-after/Screenshot_18.png" alt="Caso 4" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-image-wrapper">
+                            <span class="result-label result-label--before">Antes</span>
+                            <span class="result-label result-label--after">Depois</span>
+                            <img src="assets/images/before-after/Screenshot_19.png" alt="Caso 5" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-image-wrapper">
+                            <span class="result-label result-label--before">Antes</span>
+                            <span class="result-label result-label--after">Depois</span>
+                            <img src="assets/images/before-after/Screenshot_20.png" alt="Caso 6" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+
+                <!-- Footer: dots + index -->
+                <div class="carousel-footer">
+                    <div class="carousel-dots" id="carouselDots">
+                    </div>
+                </div>
+                </div><!-- /carousel-viewport -->
+
+                <img src="assets/images/characters/6.png" alt="" class="carousel-character carousel-character--right">
+                <img src="assets/images/characters/1.png" alt="" class="carousel-character carousel-character--left">
+            </div>
+
+            <div class="results-cta fade-in">
+                <a href="#" onclick="openWhatsApp()" class="btn btn-primary" style="margin-top: 20px">
+                    Agendar uma avaliação
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- DEPOIMENTOS — ABAIXO DO CARROSSEL (MESMA SEÇÃO) -->
+        <!-- ============================================ -->
+        <div class="container results-testimonials">
+            <div class="section-header fade-in">
+                <span class="section-tag">Avaliações</span>
+                <h2 class="section-title">O que os pacientes dizem?</h2>
+                <p class="section-description">
+                    A satisfação dos nossos pacientes é o nosso maior reconhecimento.
+                </p>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="testi-carousel-wrapper fade-in">
+                <button class="testi-arrow testi-arrow--prev" id="testiPrev" aria-label="Anterior">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+
+                <div class="testi-carousel" id="testiCarousel">
+                    <div class="testi-track" id="testiTrack">
+                        <!-- Depoimento 1 -->
+                        <div class="testi-slide">
+                            <div class="testi-shine"></div>
+                            <div class="testimonial-elegant-bg"></div>
+                            <div class="testimonial-elegant-content">
+                                <div class="testimonial-elegant-quote">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#f2bf52" opacity="0.25"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2h-4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/></svg>
+                                </div>
+                                <div class="testimonial-stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-elegant-text">"Equipe maravilhosa! Transformou meu sorriso com as lentes de contato. O Dr. Gustavo foi super atencioso e cuidadoso. Super recomendo!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar testimonial-avatar--gold">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80&auto=format&fit=crop" alt="Maria" loading="lazy">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <strong class="testimonial-name">Maria Silva</strong>
+                                        <span class="testimonial-source">Google Avaliações</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 2 -->
+                        <div class="testi-slide">
+                            <div class="testi-shine"></div>
+                            <div class="testimonial-elegant-bg"></div>
+                            <div class="testimonial-elegant-content">
+                                <div class="testimonial-elegant-quote">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#f2bf52" opacity="0.25"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2h-4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/></svg>
+                                </div>
+                                <div class="testimonial-stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-elegant-text">"Atendimento excelente, ambiente acolhedor e resultado maravilhoso. Finalmente tenho o sorriso que sempre quis. Gratidão à toda equipe!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar testimonial-avatar--gold">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop" alt="Carlos" loading="lazy">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <strong class="testimonial-name">Carlos Oliveira</strong>
+                                        <span class="testimonial-source">Google Avaliações</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 3 -->
+                        <div class="testi-slide">
+                            <div class="testi-shine"></div>
+                            <div class="testimonial-elegant-bg"></div>
+                            <div class="testimonial-elegant-content">
+                                <div class="testimonial-elegant-quote">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#f2bf52" opacity="0.25"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2h-4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/></svg>
+                                </div>
+                                <div class="testimonial-stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-elegant-text">"Profissional extremamente competente e cuidadosa. Explica cada etapa do tratamento com paciência e carinho. Saí de lá realizada!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar testimonial-avatar--gold">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop" alt="Ana" loading="lazy">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <strong class="testimonial-name">Ana Costa</strong>
+                                        <span class="testimonial-source">Google Avaliações</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 4 -->
+                        <div class="testi-slide">
+                            <div class="testi-shine"></div>
+                            <div class="testimonial-elegant-bg"></div>
+                            <div class="testimonial-elegant-content">
+                                <div class="testimonial-elegant-quote">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#f2bf52" opacity="0.25"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2h-4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/></svg>
+                                </div>
+                                <div class="testimonial-stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-elegant-text">"O ambiente da clínica é incrível! Super aconchegante, bem localizada e o cafézinho que servem é simplesmente maravilhoso. Me senti em casa do início ao fim. Nota 10!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar testimonial-avatar--gold">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80&auto=format&fit=crop" alt="Rafael" loading="lazy">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <strong class="testimonial-name">Rafael Lima</strong>
+                                        <span class="testimonial-source">Google Avaliações</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 5 -->
+                        <div class="testi-slide">
+                            <div class="testi-shine"></div>
+                            <div class="testimonial-elegant-bg"></div>
+                            <div class="testimonial-elegant-content">
+                                <div class="testimonial-elegant-quote">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#f2bf52" opacity="0.25"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2h-4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/></svg>
+                                </div>
+                                <div class="testimonial-stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-elegant-text">"Fiz meu tratamento de canal aqui e foi a melhor experiência que já tive em um consultório. O Dr. Igor foi super paciente e tirou todas as minhas dúvidas. Nota mil!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar testimonial-avatar--gold">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80&auto=format&fit=crop" alt="Fernando" loading="lazy">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <strong class="testimonial-name">Fernando Santos</strong>
+                                        <span class="testimonial-source">Google Avaliações</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 6 -->
+                        <div class="testi-slide">
+                            <div class="testi-shine"></div>
+                            <div class="testimonial-elegant-bg"></div>
+                            <div class="testimonial-elegant-content">
+                                <div class="testimonial-elegant-quote">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#f2bf52" opacity="0.25"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2h-4c-1.25 0-2 .75-2 2v7c0 1.25.75 2 2 2c0 1.5 0 3-1 5z"/></svg>
+                                </div>
+                                <div class="testimonial-stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f2bf52"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-elegant-text">"Resultado dos meus implantes superou tudo que imaginei. Dá pra comer, sorrir e viver normalmente. Qualidade de vida renovada! Muito obrigada!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar testimonial-avatar--gold">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80&auto=format&fit=crop" alt="Juliana" loading="lazy">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <strong class="testimonial-name">Juliana Martins</strong>
+                                        <span class="testimonial-source">Google Avaliações</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="testi-arrow testi-arrow--next" id="testiNext" aria-label="Próximo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+
+            <!-- Dots -->
+            <div class="testi-dots" id="testiDots"></div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 7 — CHAMADA FINAL / CTA                -->
+    <!-- ============================================ -->
+    <section class="cta-final" id="agendar">
+        <div class="cta-bg">
+            <!-- Substituir: src="assets/smile-bg.jpg" -->
+            <img src="assets/images/backgrounds/fotoclinica.png"
+                 alt=""
+                 class="cta-bg-image"
+                 loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-container">
+            <div class="cta-content fade-in">
+                <h2 class="cta-title">Volte a sorrir com liberdade</h2>
+                <p class="cta-text">
+                    Mais do que dentes, cuidamos de pessoas.<br>
+                    Sua jornada para um sorriso mais bonito e saudável começa aqui.
+                </p>
+                <a href="#" class="btn btn-primary btn-large" onclick="openWhatsApp()">
+                    Agendar uma avaliação
+                    <svg class="btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 8 — LOCALIZAÇÃO                        -->
+    <!-- ============================================ -->
+    <section class="location" id="localizacao">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title section-title--gold">Onde estamos</h2>
+            </div>
+
+            <div class="location-grid fade-in">
+                <div class="location-info">
+                    <div class="location-card location-card--brand">
+                        <div class="location-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="location-detail">
+                            <strong>Endereço</strong>
+                            <span>Rua Dr. Roberto Shoji, 1013 — Boqueirão<br>Praia Grande — SP</span>
+                        </div>
+                    </div>
+                    <div class="location-card location-card--brand">
+                        <div class="location-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="location-detail">
+                            <strong>Telefone</strong>
+                            <span>(13) 99625-3681<br>(13) 3491-3667</span>
+                        </div>
+                    </div>
+                    <div class="location-card location-card--brand">
+                        <div class="location-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                        </div>
+                        <div class="location-detail">
+                            <strong>E-mail</strong>
+                            <span>bravoodontologia@outlook.com.br</span>
+                        </div>
+                    </div>
+                    <div class="location-card location-card--brand">
+                        <div class="location-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2bf52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <div class="location-detail">
+                            <strong>Horários</strong>
+                            <span>Segunda a Sexta: 09h — 19h<br>Sábado: 09h — 14h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Rua+Dr.+Roberto+Shoji+1013+Boqueirão+Praia+Grande+SP&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da Clínica">
+                    </iframe>
+                    <img src="assets/images/characters/3.png" alt="" class="location-character">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 9 — WHATSAPP CTA                       -->
+    <!-- ============================================ -->
+    <section class="whatsapp-cta" id="whatsapp">
+        <div class="container">
+            <div class="whatsapp-content fade-in">
+                <div class="whatsapp-icon-big">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <h2 class="whatsapp-title">Agende sua consulta pelo WhatsApp</h2>
+                <p class="whatsapp-text">
+                    Tire suas dúvidas e agende seu horário de forma rápida e prática.
+                </p>
+                <a href="#" class="btn btn-whatsapp" onclick="openWhatsApp()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    AGENDAR AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <!-- Substituir: src="assets/logo-white.png" -->
+                    <div class="footer-logo">
+                        <img src="assets/images/logos/icone1.png" alt="Bravo" class="footer-icon">
+                        <div>
+                            <strong class="footer-logo-name">Bravo Odontologia<br>Integrada e Estética</strong>
+                            <span class="footer-logo-sub">Odontologia Integrada e Estética</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Mais do que dentes, cuidamos de pessoas.<br>
+                        Transformando sorrisos com excelência, tecnologia e carinho.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#203e43" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Rua Dr. Roberto Shoji, 1013 — Boqueirão
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#203e43" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            (13) 99625-3681
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#203e43" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                            bravoodontologia@outlook.com.br
+                        </li>
+                    </ul>
+
+                    <div class="footer-social">
+                        <a href="https://instagram.com/bravoodontologia" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61590961873695" target="_blank" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                        </a>
+                        <img src="assets/images/logos/logobranca.png" alt="Bravo" class="footer-brand-logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bravo Odontologia Integrada e Estética — Todos os direitos reservados.</p>
+                <p class="footer-credits">Desenvolvido por: Natalia Sampaio Gonçalves — Publicitária e Designer.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS                                      -->
+    <!-- ============================================ -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/carousels.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
