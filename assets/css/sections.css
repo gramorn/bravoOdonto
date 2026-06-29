@@ -139,6 +139,11 @@
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text; font-weight: 600;
 }
+.text-grad--light {
+    background: linear-gradient(135deg, #ffffff 0%, #f2bf52 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; font-weight: 600;
+}
 
 .about-stats { display: flex; gap: 40px; margin: 32px 0; }
 .stat-item { text-align: center; }
