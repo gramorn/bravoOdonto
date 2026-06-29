@@ -132,6 +132,7 @@ function initTreatmentsCarousel() {
     const cards = track.querySelectorAll('.treatment-card');
     const total = cards.length;
     let current = 0;
+    let direction = 1;
 
     function isMobile() { return window.innerWidth < 640; }
 
@@ -145,9 +146,11 @@ function initTreatmentsCarousel() {
         return cards[0].offsetWidth + 20;
     }
 
+    function getMax() { return Math.max(0, total - (isMobile() ? 1 : 3)); }
+
     function update() {
         const visible = isMobile() ? 1 : 3;
-        const max = Math.max(0, total - visible);
+        const max = getMax();
         if (current > max) current = max;
         const step = getScrollStep();
         track.style.transform = `translateX(-${current * step}px)`;
@@ -163,7 +166,13 @@ function initTreatmentsCarousel() {
         cards.forEach((c, i) => c.classList.toggle('active-shine', i >= current && i < current + visible));
     }
 
-    function next() { const max = Math.max(0, total - (isMobile() ? 1 : 3)); if (current < max) { current++; update(); } }
+    function next() {
+        const max = getMax();
+        current += direction;
+        if (current >= max) { current = max; direction = -1; }
+        else if (current <= 0) { current = 0; direction = 1; }
+        update();
+    }
     function prev() { if (current > 0) { current--; update(); } }
 
     if (prevBtn) prevBtn.addEventListener('click', prev);

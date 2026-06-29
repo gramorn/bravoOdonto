@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
+    createParticles('particlesTreatments');
     initScrollAnimations();
     initCounters();
     initSmoothScroll();

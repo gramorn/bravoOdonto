@@ -11,15 +11,15 @@ function openWhatsApp(msg, phone) {
 }
 
 // === Particles ===
-function createParticles() {
-    const container = document.getElementById('particles');
+function createParticles(containerId) {
+    const container = document.getElementById(containerId || 'particles');
     if (!container) return;
     const colors = ['rgba(32,62,67,0.6)', 'rgba(32,62,67,0.4)', 'rgba(255,255,255,0.2)'];
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 100; i++) {
         const p = document.createElement('div');
         p.classList.add('particle');
-        const size = Math.random() * 3 + 1;
-        p.style.cssText = `left:${Math.random()*100}%;width:${size}px;height:${size}px;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*20+10}s;animation-delay:${Math.random()*20}s`;
+        const size = Math.random() * 10 + 1;
+        p.style.cssText = `left:${Math.random()*100}%;width:${size}px;height:${size}px;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*15+8}s;animation-delay:${Math.random()*3}s`;
         container.appendChild(p);
     }
 }
