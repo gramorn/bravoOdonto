@@ -3,10 +3,11 @@
    ============================================================ */
 
 // === WhatsApp ===
-function openWhatsApp() {
-    const phone = '5513996253681';
-    const message = encodeURIComponent('Olá! Gostaria de agendar uma avaliação.');
-    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+function openWhatsApp(msg, phone) {
+    const tel = phone || '5513996253681';
+    const text = msg || 'Olá! Gostaria de agendar uma avaliação.';
+    const message = encodeURIComponent(text);
+    window.open(`https://wa.me/${tel}?text=${message}`, '_blank');
 }
 
 // === Particles ===
